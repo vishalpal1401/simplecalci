@@ -70,10 +70,10 @@ const Calculator = () => {
   };
 
   return (
-    <div className="bg-gray-800 rounded-2xl p-6 shadow-xl">
+    <div className="bg-gray-800 rounded-2xl p-4 shadow-xl w-80">
       <Display value={display} />
       
-      <div className="grid grid-cols-4 gap-3 mt-6">
+      <div className="grid grid-cols-4 gap-2 mt-4">
         {/* Row 1 */}
         <CalculatorButton 
           onClick={clear} 

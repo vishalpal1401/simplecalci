@@ -19,7 +19,7 @@ const CalculatorButton: React.FC<CalculatorButtonProps> = ({
     <button
       onClick={onClick}
       className={cn(
-        "h-16 rounded-lg font-medium text-xl transition-all duration-150 active:scale-95",
+        "h-12 rounded-lg font-medium text-lg transition-all duration-150 active:scale-95",
         "bg-gray-600 hover:bg-gray-500 text-white",
         "flex items-center justify-center",
         wide && "col-span-2",
