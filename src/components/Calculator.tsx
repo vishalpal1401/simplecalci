@@ -9,6 +9,13 @@ const Calculator = () => {
   const [previousValue, setPreviousValue] = useState<number | null>(null);
   const [operation, setOperation] = useState<string | null>(null);
   const [waitingForOperand, setWaitingForOperand] = useState(false);
+  const [input, setInput] = useState("");
+
+
+  function handleBackspace() {
+  setInput(prev => prev.slice(0, -1));
+}
+
 
   const inputNumber = (num: string) => {
     if (waitingForOperand) {
@@ -82,10 +89,10 @@ const Calculator = () => {
         >
           CE
         </CalculatorButton>
-        <CalculatorButton 
-          onClick={() => {/* Back functionality can be added */}} 
-          className="bg-gray-400 hover:bg-gray-300 text-black"
-        >
+       <CalculatorButton 
+  onClick={handleBackspace} 
+  className="bg-gray-400 hover:bg-gray-300 text-black"
+>
           ←
         </CalculatorButton>
         <CalculatorButton 
