@@ -27,4 +27,4 @@ A responsive and user-friendly calculator web app with features to browse produc
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/vishalpal1401/quirky-calc-web-wizard.git
+git clone https://github.com/vishalpal1401/simplecalci.git
