@@ -13,7 +13,12 @@ const Calculator = () => {
 
 
   function handleBackspace() {
-  setInput(prev => prev.slice(0, -1));
+  setDisplay(prev => {
+    if (prev.length <= 1) {
+      return '0'; // if only one digit left, reset to 0
+    }
+    return prev.slice(0, -1);
+  });
 }
 
 
